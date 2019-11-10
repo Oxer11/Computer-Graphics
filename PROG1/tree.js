@@ -119,7 +119,7 @@ function draw(gl, u_mvxMatrix, u_FragColor) {
         var mvxMatrix = new Matrix4();
         mvxMatrix.setOrtho(-1.0, 1.0, -1.0, 1.0, -2.0, 2.0);
         mvxMatrix.translate(left_Clicks[i][0], left_Clicks[i][1], 0.0);
-        if (is_top_view) mvxMatrix.lookAt(0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+        if (is_top_view) mvxMatrix.lookAt(0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
         else mvxMatrix.lookAt(0.0, -1.0, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0);
         gl.uniformMatrix4fv(u_mvxMatrix, false, mvxMatrix.elements);
 
@@ -138,7 +138,7 @@ function draw(gl, u_mvxMatrix, u_FragColor) {
         var mvxMatrix = new Matrix4();
         mvxMatrix.setOrtho(-1.0, 1.0, -1.0, 1.0, -2.0, 2.0);
         mvxMatrix.translate(right_Clicks[i][0], right_Clicks[i][1], 0.0);
-        if (is_top_view) mvxMatrix.lookAt(0.0, 0.0, -1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+        if (is_top_view) mvxMatrix.lookAt(0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
         else mvxMatrix.lookAt(0.0, -1.0, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0);
         gl.uniformMatrix4fv(u_mvxMatrix, false, mvxMatrix.elements);
 
