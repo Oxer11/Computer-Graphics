@@ -5,3 +5,5 @@ Course Labs for *CSE160/L Introduction to Computer Graphics* 2019 Fall @ Univers
 [LAB1](<https://oxer11.github.io/CG/LAB1>)
 
 [PROG1](<https://oxer11.github.io/CG/PROG1>)
+
+[LAB2](<https://oxer11.github.io/CG/LAB2>)
